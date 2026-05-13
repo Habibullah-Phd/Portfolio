@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Md. Habibullah | Chemical Engineering Researcher</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --ink:#0b1526;
+  --ink2:#1e2d45;
+  --teal:#0aa87f;
+  --teal-d:#087a5d;
+  --teal-l:#e3f5ef;
+  --teal-m:rgba(10,168,127,0.15);
+  --gold:#d4900a;
+  --gold-l:#fdf3e0;
+  --muted:#5a697e;
+  --muted2:#8c9bae;
+  --border:#e3e9f0;
+  --bg:#f4f6f9;
+  --card:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:300;
+  background:rgba(244,246,249,0.96);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 5rem;height:56px;
+}
+.n-logo{font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;color:var(--ink);letter-spacing:0.01em;}
+.n-logo em{color:var(--teal);font-style:normal;}
+.n-links{display:flex;gap:2rem;list-style:none;}
+.n-links a{font-size:0.73rem;font-weight:500;letter-spacing:0.09em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .18s;}
+.n-links a:hover{color:var(--teal);}
+
+/* ── HERO ── */
+.hero-shell{max-width:1160px;margin:0 auto;padding:0 5rem;}
+.hero{
+  display:grid;grid-template-columns:1fr 380px;
+  align-items:center;gap:4rem;
+  min-height:100vh;padding-top:4rem;
+}
+
+/* left */
+.eyebrow{
+  font-size:0.68rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:1rem;
+  display:flex;align-items:center;gap:0.7rem;
+}
+.eyebrow::before{content:'';width:24px;height:2px;background:var(--teal);flex-shrink:0;}
+h1{font-family:'Syne',sans-serif;font-size:3.1rem;font-weight:800;line-height:1.07;color:var(--ink);margin-bottom:0.9rem;}
+h1 em{color:var(--teal);font-style:normal;}
+.tagline{font-size:0.94rem;color:var(--muted);font-weight:300;line-height:1.75;max-width:430px;margin-bottom:1.6rem;}
+.tagline strong{color:var(--ink);font-weight:500;}
+.tags{display:flex;flex-wrap:wrap;gap:0.45rem;margin-bottom:1.8rem;}
+.tag{font-size:0.71rem;font-weight:500;padding:4px 11px;border-radius:999px;letter-spacing:0.03em;border:1.5px solid;}
+.tg{border-color:var(--teal);color:var(--teal-d);background:var(--teal-l);}
+.ta{border-color:#c8880a;color:#6b4600;background:var(--gold-l);}
+.tn{border-color:#b2bcc9;color:#374558;background:#edf0f5;}
+.btns{display:flex;gap:0.8rem;flex-wrap:wrap;}
+.btn{display:inline-flex;align-items:center;gap:.3rem;padding:.6rem 1.3rem;border-radius:7px;font-size:.85rem;font-weight:500;text-decoration:none;transition:all .18s;cursor:pointer;border:none;font-family:'Inter',sans-serif;}
+.bp{background:var(--teal);color:#fff;}
+.bp:hover{background:var(--teal-d);}
+.bo{background:transparent;color:var(--ink);border:1.5px solid #c5cdd9;}
+.bo:hover{background:var(--ink);color:#fff;border-color:var(--ink);}
+
+/* right */
+.hero-right{display:flex;flex-direction:column;align-items:center;gap:1.2rem;}
+
+/* photo */
+.photo-ring{
+  position:relative;width:280px;height:320px;
+}
+.photo-ring::before{
+  content:'';
+  position:absolute;inset:-6px;
+  border:2px solid var(--teal);
+  border-radius:18px;
+  z-index:0;
+}
+.photo-ring img{
+  width:100%;height:100%;
+  object-fit:cover;object-position:top center;
+  border-radius:14px;
+  position:relative;z-index:1;
+  display:block;
+  background:#d0dce8;
+}
+
+/* stat row */
+.stat-row{display:flex;gap:0.7rem;width:280px;}
+.stat{
+  flex:1;background:var(--card);border:1px solid var(--border);
+  border-radius:10px;padding:.8rem .5rem;text-align:center;
+}
+.stat-n{font-family:'Syne',sans-serif;font-size:1.5rem;font-weight:700;color:var(--teal);line-height:1;}
+.stat-l{font-size:0.62rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted2);margin-top:3px;}
+
+/* social pills */
+.soc-row{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;width:280px;}
+.soc{font-size:.72rem;font-weight:500;padding:4px 12px;border-radius:6px;text-decoration:none;transition:opacity .15s;}
+.soc:hover{opacity:.75;}
+.soc-gs{background:var(--teal-l);color:var(--teal-d);border:1px solid rgba(10,168,127,.25);}
+.soc-li{background:#e8f0fb;color:#0a66c2;border:1px solid rgba(10,102,194,.2);}
+.soc-fb{background:#e8f1fb;color:#1877f2;border:1px solid rgba(24,119,242,.2);}
+.soc-rg{background:#e8f4fb;color:#00aacc;border:1px solid rgba(0,170,204,.2);}
+
+/* ── DIVIDER ── */
+hr.d{border:none;border-top:1px solid var(--border);}
+
+/* ── SECTIONS ── */
+section{max-width:1060px;margin:0 auto;padding:4rem 5rem;}
+.sh{font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:700;color:var(--ink);margin-bottom:.2rem;}
+.sb{width:36px;height:3px;background:var(--teal);border-radius:2px;margin-bottom:2rem;}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+.about-p{font-size:.92rem;color:var(--muted);line-height:1.8;}
+.about-p strong{color:var(--ink);font-weight:500;}
+.kv-block{}
+.kv{display:flex;flex-direction:column;padding:.55rem 0;border-bottom:1px solid var(--border);}
+.kv:last-child{border:none;}
+.kl{font-size:.64rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted2);}
+.kv_{font-size:.88rem;font-weight:500;color:var(--ink);margin-top:2px;}
+
+/* ── TIMELINE ── */
+.tl{position:relative;padding-left:1.6rem;}
+.tl::before{content:'';position:absolute;left:0;top:8px;bottom:0;width:1.5px;background:var(--border);}
+.ti{position:relative;margin-bottom:2rem;}
+.ti:last-child{margin-bottom:0;}
+.ti::before{
+  content:'';position:absolute;left:-2rem;top:7px;
+  width:10px;height:10px;border-radius:50%;
+  background:var(--teal);border:2px solid var(--bg);
+  box-shadow:0 0 0 2px var(--teal);
+}
+.ti-date{font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--teal);font-weight:600;margin-bottom:.2rem;}
+.ti-title{font-family:'Syne',sans-serif;font-size:.97rem;font-weight:700;color:var(--ink);}
+.ti-org{font-size:.84rem;color:var(--muted);margin:.1rem 0 .45rem;}
+.ti-note{font-size:.83rem;color:var(--muted);line-height:1.65;}
+
+/* ── EXP CARDS ── */
+.exp-card{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:1.3rem 1.5rem;margin-bottom:1rem;
+  display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:start;
+}
+.exp-card:last-child{margin-bottom:0;}
+.ec-role{font-family:'Syne',sans-serif;font-size:.95rem;font-weight:700;color:var(--ink);}
+.ec-co{font-size:.82rem;color:var(--muted);margin:.15rem 0 .7rem;}
+.ec-tags{display:flex;flex-wrap:wrap;gap:.4rem;}
+.ec-tag{font-size:.7rem;font-weight:500;padding:3px 9px;border-radius:5px;background:var(--teal-l);color:var(--teal-d);}
+.ec-dur{font-size:.72rem;font-weight:600;color:var(--teal);background:var(--teal-l);padding:4px 10px;border-radius:6px;white-space:nowrap;height:fit-content;}
+
+/* ── LAB SKILLS ── */
+.lab-block{
+  background:var(--ink2);border-radius:14px;padding:1.8rem 2rem;margin-bottom:1.5rem;
+}
+.lab-hl{font-family:'Syne',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1.1rem;}
+.lab-tags{display:flex;flex-wrap:wrap;gap:.55rem;}
+.lt{font-size:.78rem;font-weight:500;padding:5px 13px;border-radius:7px;background:rgba(10,168,127,.14);color:#4dddb0;border:1px solid rgba(10,168,127,.28);letter-spacing:.01em;}
+
+.sk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.9rem;}
+.sk-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;}
+.sk-title{font-size:.64rem;text-transform:uppercase;letter-spacing:.12em;color:var(--teal);font-weight:600;margin-bottom:.65rem;}
+.sk-tag{display:inline-block;font-size:.76rem;color:var(--ink);background:var(--bg);padding:3px 8px;border-radius:4px;margin:2px 2px 2px 0;border:1px solid var(--border);}
+
+/* ── RESEARCH ── */
+.res-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;}
+.res-card{
+  background:var(--card);border:1px solid var(--border);border-radius:12px;
+  padding:1.3rem;transition:transform .18s,box-shadow .18s;
+}
+.res-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(10,168,127,.1);}
+.ri{font-size:1.3rem;margin-bottom:.7rem;}
+.res-card h3{font-family:'Syne',sans-serif;font-size:.9rem;font-weight:700;color:var(--ink);margin-bottom:.3rem;}
+.res-card p{font-size:.81rem;color:var(--muted);line-height:1.6;}
+
+/* ── PUB ── */
+.pub{
+  background:var(--card);border:1px solid var(--border);
+  border-left:4px solid var(--teal);border-radius:0 12px 12px 0;
+  padding:1.3rem 1.8rem;
+}
+.pub-j{font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.13em;color:var(--teal);margin-bottom:.4rem;}
+.pub-t{font-size:.95rem;font-weight:600;color:var(--ink);line-height:1.45;margin-bottom:.35rem;}
+.pub-m{font-size:.8rem;color:var(--muted2);}
+.pub-a{display:inline-flex;align-items:center;gap:.3rem;margin-top:.6rem;font-size:.8rem;font-weight:500;color:var(--teal);text-decoration:none;}
+.pub-a:hover{text-decoration:underline;}
+
+/* ── IELTS ── */
+.ielts-card{
+  background:var(--card);border:1px solid var(--border);border-radius:14px;
+  padding:1.8rem 2rem;display:grid;grid-template-columns:140px 1fr;gap:2rem;align-items:center;
+}
+.ib{text-align:center;padding-right:2rem;border-right:1px solid var(--border);}
+.is{font-family:'Syne',sans-serif;font-size:3.8rem;font-weight:800;color:var(--teal);line-height:1;}
+.il{font-size:.67rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted2);margin-top:4px;}
+.bands{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
+.band{text-align:center;}
+.bs{font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:700;color:var(--ink);}
+.bl{font-size:.67rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted2);margin-top:2px;}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;}
+.contact-intro{font-size:.9rem;color:var(--muted);line-height:1.8;}
+.contact-intro strong{color:var(--ink);font-weight:500;}
+.cl-list{display:flex;flex-direction:column;gap:.7rem;}
+.cl{
+  display:flex;align-items:center;gap:.9rem;
+  background:var(--card);border:1px solid var(--border);border-radius:10px;
+  padding:.85rem 1.1rem;text-decoration:none;color:var(--ink);
+  transition:border-color .18s,transform .15s;
+}
+.cl:hover{border-color:var(--teal);transform:translateX(3px);}
+.cl-ico{width:34px;height:34px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;}
+.cl-t{font-weight:500;font-size:.85rem;color:var(--ink);}
+.cl-s{font-size:.73rem;color:var(--muted2);}
+.edit-hint{
+  display:inline-block;font-size:.68rem;color:var(--muted2);
+  border:1px dashed var(--border);border-radius:5px;padding:2px 8px;margin-top:3px;
+}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);color:rgba(255,255,255,.4);text-align:center;padding:1.6rem;font-size:.77rem;}
+footer em{color:var(--teal);font-style:normal;}
+
+/* ── ANIMATE ── */
+.ai{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease;}
+.ai.v{opacity:1;transform:none;}
+.d1{transition-delay:.08s;} .d2{transition-delay:.16s;} .d3{transition-delay:.24s;}
+
+@media(max-width:900px){
+  nav{padding:0 1.5rem;}
+  .n-links{display:none;}
+  .hero-shell{padding:0 1.5rem;}
+  .hero{grid-template-columns:1fr;padding-top:4.5rem;gap:2rem;}
+  .hero-right{order:-1;}
+  .photo-ring{width:220px;height:260px;}
+  .stat-row,.soc-row{width:220px;}
+  h1{font-size:2.3rem;}
+  section{padding:3rem 1.5rem;}
+  .about-grid,.res-grid,.contact-grid{grid-template-columns:1fr;}
+  .ielts-card{grid-template-columns:1fr;}
+  .ib{border-right:none;border-bottom:1px solid var(--border);padding-right:0;padding-bottom:1.5rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="n-logo"><em>Habibullah</em></div>
+  <ul class="n-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero-shell">
+<div class="hero">
+
+  <!-- LEFT -->
+  <div class="ai">
+    <div class="eyebrow">PhD Researcher · Chemical Engineering</div>
+    <h1><em>Habibullah</em></h1>
+    <p class="tagline">
+      Integrated PhD Candidate at <strong>Kyung Hee University, South Korea</strong> — advancing membrane-based water treatment, desalination, and separation science.
+    </p>
+    <div class="tags">
+      <span class="tag tg">Membrane Technology</span>
+      <span class="tag tg">Biodegradable Polymers</span>
+      <span class="tag tg">Separation</span>
+      <span class="tag ta">Wastewater</span>
+      <span class="tag tn">Artificial Organs</span>
+      <span class="tag tg">Sustainability</span>
+      <span class="tag tn">Nanomaterials</span>
+    </div>
+    <div class="btns">
+      <a href="https://scholar.google.com/citations?hl=en&user=eBw87vAAAAAJ" target="_blank" class="btn bp">Google Scholar ↗</a>
+      <a href="#contact" class="btn bo">Contact Me</a>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="hero-right ai d1">
+    <div class="photo-ring">
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="Md. Habibullah"
+      />
+    </div>
+
+    <div class="stat-row">
+      <div class="stat"><div class="stat-n">1</div><div class="stat-l">RSC Pub</div></div>
+      <div class="stat"><div class="stat-n">2+</div><div class="stat-l">Yrs Work</div></div>
+      <div class="stat"><div class="stat-n">6.5</div><div class="stat-l">IELTS</div></div>
+    </div>
+
+    <div class="soc-row">
+      <a href="https://scholar.google.com/citations?hl=en&user=eBw87vAAAAAJ" target="_blank" class="soc soc-gs">Google Scholar</a>
+      <a href="https://www.researchgate.net/profile/Habibullah-Habibullah-8" target="_blank" class="soc soc-rg">ResearchGate</a>
+      <!-- ✏ Replace YOUR_LINKEDIN_URL below -->
+      <a href="YOUR_LINKEDIN_URL" id="li-btn" target="_blank" class="soc soc-li">LinkedIn</a>
+      <a href="https://www.facebook.com/share/1JPKvwqEos/" target="_blank" class="soc soc-fb">Facebook</a>
+    </div>
+  </div>
+
+</div><!-- /hero -->
+</div><!-- /hero-shell -->
+
+<hr class="d"/>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about">
+  <div class="sh ai">About</div>
+  <div class="sb"></div>
+  <div class="about-grid ai d1">
+    <p class="about-p">
+      Currently a <strong>Graduate Research Assistant at Kyung Hee University, South Korea</strong>, pursuing an <strong>Integrated PhD in Chemical Engineering</strong> (since March 2026) with focus on polymer membranes, desalination, and wastewater treatment. Previously worked in the Bangladesh textile industry in dyeing &amp; finishing operations and garment merchandising. Holds a <strong>B.Sc. in Textile Engineering (Wet Process)</strong> from BUTEX, Dhaka. Published in the <strong>Royal Society of Chemistry</strong>.
+    </p>
+    <div class="kv-block">
+      <div class="kv"><span class="kl">Current Institution</span><span class="kv_">Kyung Hee University, South Korea</span></div>
+      <div class="kv"><span class="kl">Programme</span><span class="kv_">Integrated PhD · Chemical Engineering</span></div>
+      <div class="kv"><span class="kl">Role</span><span class="kv_">Graduate Research Assistant (Mar 2026–)</span></div>
+      <div class="kv"><span class="kl">IELTS</span><span class="kv_">6.5 · R:7 / L:7 / S:6.5 / W:6</span></div>
+      <div class="kv"><span class="kl">Location</span><span class="kv_">Suwon, South Korea</span></div>
+    </div>
+  </div>
+</section>
+
+<hr class="d"/>
+
+<!-- ══════════ EDUCATION ══════════ -->
+<section id="education">
+  <div class="sh ai">Education</div>
+  <div class="sb"></div>
+  <div class="tl ai d1">
+
+    <div class="ti">
+      <div class="ti-date">March 2026 – Present</div>
+      <div class="ti-title">Integrated PhD — Chemical Engineering</div>
+      <div class="ti-org">Kyung Hee University, Suwon, South Korea</div>
+      <div class="ti-note">Graduate Research Assistant. Focus: polymer membranes, separation processes, desalination, wastewater treatment, artificial organs.</div>
+    </div>
+
+    <div class="ti">
+      <div class="ti-date">Session 2016–2017 &nbsp;·&nbsp; CGPA 3.09 / 4.00 &nbsp;<span style="color:var(--teal);font-size:.85em;">(last 4 semesters avg 3.43 / 4.00)</span></div>
+      <div class="ti-title">B.Sc. Textile Engineering — Wet Process Engineering</div>
+      <div class="ti-org">Bangladesh University of Textiles (BUTEX), Dhaka, Bangladesh</div>
+      <div class="ti-note">Specialisation in dyeing, finishing, and chemical processing of textile substrates.</div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="d"/>
+
+<!-- ══════════ EXPERIENCE ══════════ -->
+<section id="experience">
+  <div class="sh ai">Experience</div>
+  <div class="sb"></div>
+  <div class="ai d1">
+
+    <div class="exp-card" style="border-left:3px solid var(--teal);">
+      <div>
+        <div class="ec-role">Kyung Hee University</div>
+        <div class="ec-co">Suwon, South Korea · Integrated PhD, Chemical Engineering</div>
+        <div class="ec-tags">
+          <span class="ec-tag">Membrane Fabrication</span>
+          <span class="ec-tag">Polymer Science</span>
+          <span class="ec-tag">Desalination</span>
+          <span class="ec-tag">Wastewater Treatment</span>
+          <span class="ec-tag">FT-IR · SEM · WCA</span>
+          <span class="ec-tag">NIPS · Cross-Flow</span>
+        </div>
+      </div>
+      <div class="ec-dur">Mar 2026–</div>
+    </div>
+
+    <div class="exp-card">
+      <div>
+        <div class="ec-role">Graphics Textiles Ltd.</div>
+        <div class="ec-co">Dhaka, Bangladesh</div>
+        <div class="ec-tags">
+          <span class="ec-tag">Reactive Dyeing</span>
+          <span class="ec-tag">Finishing</span>
+          <span class="ec-tag">Colour Consistency</span>
+          <span class="ec-tag">Process Optimisation</span>
+          <span class="ec-tag">QC</span>
+          <span class="ec-tag">Effluent Management</span>
+        </div>
+      </div>
+      <div class="ec-dur">~1 Year</div>
+    </div>
+
+    <div class="exp-card">
+      <div>
+        <div class="ec-role">Matrix Sweaters Ltd.</div>
+        <div class="ec-co">Dhaka, Bangladesh</div>
+        <div class="ec-tags">
+          <span class="ec-tag">Buyer Communication</span>
+          <span class="ec-tag">Production Coordination</span>
+          <span class="ec-tag">Sample Approval</span>
+          <span class="ec-tag">Order Tracking</span>
+          <span class="ec-tag">Export Documentation</span>
+        </div>
+      </div>
+      <div class="ec-dur">~7 Months</div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="d"/>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills">
+  <div class="sh ai">Laboratory &amp; Technical Skills</div>
+  <div class="sb"></div>
+
+  <div class="lab-block ai">
+    <div class="lab-hl">Characterisation &amp; Membrane Testing</div>
+    <div class="lab-tags">
+      <span class="lt">FT-IR Spectroscopy</span>
+      <span class="lt">SEM</span>
+      <span class="lt">NIPS</span>
+      <span class="lt">Dead-End Filtration Cell</span>
+      <span class="lt">Water Contact Angle (WCA)</span>
+      <span class="lt">Cross-Flow Filtration</span>
+      <span class="lt">Chromatography</span>
+      <span class="lt">Membrane Flux &amp; Rejection Testing</span>
+      <span class="lt">Polymer Solution Casting</span>
+      <span class="lt">Pore Size Analysis</span>
+    </div>
+  </div>
+
+  <div class="sk-grid ai d1">
+    <div class="sk-card">
+      <div class="sk-title">Wet Process Engineering</div>
+      <span class="sk-tag">Reactive Dyeing</span>
+      <span class="sk-tag">Textile Finishing</span>
+      <span class="sk-tag">Colour Matching</span>
+      <span class="sk-tag">Effluent Analysis</span>
+    </div>
+    <div class="sk-card">
+      <div class="sk-title">Research</div>
+      <span class="sk-tag">Scientific Writing</span>
+      <span class="sk-tag">Journal Publishing</span>
+      <span class="sk-tag">Literature Review</span>
+      <span class="sk-tag">Data Analysis</span>
+    </div>
+    <div class="sk-card">
+      <div class="sk-title">Industry</div>
+      <span class="sk-tag">Production Management</span>
+      <span class="sk-tag">Buyer Communication</span>
+      <span class="sk-tag">QA / QC</span>
+      <span class="sk-tag">Export Process</span>
+    </div>
+    <div class="sk-card">
+      <div class="sk-title">Languages</div>
+      <span class="sk-tag">Bengali — Native</span>
+      <span class="sk-tag">English — IELTS 6.5</span>
+      <span class="sk-tag">Korean — Learning</span>
+    </div>
+  </div>
+</section>
+
+<hr class="d"/>
+
+<!-- ══════════ RESEARCH ══════════ -->
+<section id="research">
+  <div class="sh ai">Research Interests</div>
+  <div class="sb"></div>
+  <div class="res-grid ai d1">
+    <div class="res-card">
+      <div class="ri">🔬</div>
+      <h3>Membrane Technology</h3>
+      <p>Design of high-performance polymer membranes via NIPS and phase-inversion methods for selective transport and separation.</p>
+    </div>
+    <div class="res-card">
+      <div class="ri">🧬</div>
+      <h3>Biodegradable Polymers</h3>
+      <p>Developing eco-friendly biodegradable polymer systems for sustainable membrane and biomedical applications.</p>
+    </div>
+    <div class="res-card">
+      <div class="ri">⚗️</div>
+      <h3>Separation</h3>
+      <p>Ultrafiltration, nanofiltration, and reverse osmosis with enhanced flux, rejection, and anti-fouling properties.</p>
+    </div>
+    <div class="res-card">
+      <div class="ri">♻️</div>
+      <h3>Wastewater</h3>
+      <p>Membrane and hybrid treatment systems for industrial effluents, with focus on textile and dye-laden wastewater.</p>
+    </div>
+    <div class="res-card">
+      <div class="ri">🫀</div>
+      <h3>Artificial Organs</h3>
+      <p>Biocompatible membrane development for haemodialysis and next-generation life-supporting systems.</p>
+    </div>
+    <div class="res-card">
+      <div class="ri">🌱</div>
+      <h3>Sustainability</h3>
+      <p>Circular water use, resource recovery, and low-energy processes integrating membrane technology with industrial systems.</p>
+    </div>
+    <div class="res-card">
+      <div class="ri">⬡</div>
+      <h3>Nanomaterials</h3>
+      <p>Incorporation of functional nanomaterials into membrane matrices to improve permeability, selectivity, and anti-fouling performance.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="d"/>
+
+<!-- ══════════ PUBLICATIONS ══════════ -->
+<section id="publications">
+  <div class="sh ai">Publications</div>
+  <div class="sb"></div>
+  <div class="pub ai d1">
+    <div class="pub-j">Royal Society of Chemistry (RSC)</div>
+    <div class="pub-t">Water and Electricity Consumption Patterns with Effluent Quality in the Textile Processing Industry of Bangladesh</div>
+    <div class="pub-m">Habibullah et al.</div>
+    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eBw87vAAAAAJ&citation_for_view=eBw87vAAAAAJ:8k81kl-MbHgC" target="_blank" class="pub-a">View on Google Scholar ↗</a>
+  </div>
+</section>
+
+<hr class="d"/>
+
+<!-- ══════════ IELTS ══════════ -->
+<section>
+  <div class="sh ai">English Proficiency</div>
+  <div class="sb"></div>
+  <div class="ielts-card ai d1">
+    <div class="ib">
+      <div class="is">6.5</div>
+      <div class="il">IELTS Academic<br/>Overall Band</div>
+    </div>
+    <div class="bands">
+      <div class="band"><div class="bs">7.0</div><div class="bl">Reading</div></div>
+      <div class="band"><div class="bs">7.0</div><div class="bl">Listening</div></div>
+      <div class="band"><div class="bs">6.5</div><div class="bl">Speaking</div></div>
+      <div class="band"><div class="bs">6.0</div><div class="bl">Writing</div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="d"/>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+  <div class="sh ai">Contact</div>
+  <div class="sb"></div>
+  <div class="contact-grid ai d1">
+
+    <div class="contact-intro">
+      <p>Open to research collaborations and academic discussions in membrane science, separation science, polymer systems, and sustainable water treatment.</p>
+      <br/>
+      <p>Feel free to reach out via email or any of the profiles below.</p>
+    </div>
+
+    <div class="cl-list">
+
+      <a href="mailto:habibullah371245@gmail.com" class="cl">
+        <div class="cl-ico" style="background:#fce8e6;color:#d93025;">✉</div>
+        <div>
+          <div class="cl-t">habibullah371245@gmail.com</div>
+          <div class="cl-s">Personal Email</div>
+        </div>
+      </a>
+
+      <a href="mailto:habibullah@khu.ac.kr" class="cl">
+        <div class="cl-ico" style="background:var(--teal-l);color:var(--teal-d);">🏛</div>
+        <div>
+          <div class="cl-t">habibullah@khu.ac.kr</div>
+          <div class="cl-s">Institutional Email · Kyung Hee University</div>
+        </div>
+      </a>
+
+      <a href="https://wa.me/8801721324880" target="_blank" class="cl">
+        <div class="cl-ico" style="background:#e7f8ee;color:#25d366;">📱</div>
+        <div>
+          <div class="cl-t">+880 1721-324880</div>
+          <div class="cl-s">WhatsApp · Bangladesh</div>
+        </div>
+      </a>
+
+      <div class="cl" style="cursor:default;">
+        <div class="cl-ico" style="background:#e8f0fb;color:#555;">📞</div>
+        <div>
+          <div class="cl-t">+82 010-2130-7267</div>
+          <div class="cl-s">South Korea</div>
+        </div>
+      </div>
+
+      <a href="https://scholar.google.com/citations?hl=en&user=eBw87vAAAAAJ" target="_blank" class="cl">
+        <div class="cl-ico" style="background:#e3f5ef;color:var(--teal-d);">🎓</div>
+        <div>
+          <div class="cl-t">Google Scholar</div>
+          <div class="cl-s">Publications &amp; Citations</div>
+        </div>
+      </a>
+
+      <a href="https://www.researchgate.net/profile/Habibullah-Habibullah-8" target="_blank" class="cl">
+        <div class="cl-ico" style="background:#e8f4fb;color:#00aacc;font-weight:700;font-size:.78rem;">RG</div>
+        <div>
+          <div class="cl-t">ResearchGate</div>
+          <div class="cl-s">Research Profile</div>
+        </div>
+      </a>
+
+      <!-- ✏ LINKEDIN — replace YOUR_LINKEDIN_URL with your profile link -->
+      <a href="YOUR_LINKEDIN_URL" id="li-contact" target="_blank" class="cl">
+        <div class="cl-ico" style="background:#e8f0fb;color:#0a66c2;font-weight:700;font-size:.85rem;">in</div>
+        <div>
+          <div class="cl-t">LinkedIn</div>
+          <div class="cl-s">Professional Profile</div>
+          <div class="edit-hint">✏ Open HTML · find YOUR_LINKEDIN_URL · paste your link</div>
+        </div>
+      </a>
+
+      <a href="https://www.facebook.com/share/1JPKvwqEos/" target="_blank" class="cl">
+        <div class="cl-ico" style="background:#e8f1fb;color:#1877f2;font-weight:700;font-size:.85rem;">f</div>
+        <div>
+          <div class="cl-t">Facebook</div>
+          <div class="cl-s">Social Profile</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <em>Habibullah</em> · Integrated PhD Researcher · Kyung Hee University, South Korea</p>
+</footer>
+
+<script>
+const io = new IntersectionObserver(e=>{
+  e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('v');});
+},{threshold:0.07});
+document.querySelectorAll('.ai').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
