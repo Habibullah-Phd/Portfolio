@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic CV - Md. Habibullah</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #000;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            line-height: 1.4;
+        }
+
+        header {
+            border-bottom: 3px solid #0a3a66;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #0a3a66;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            font-size: 11px;
+            text-align: center;
+            color: #666;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .section {
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            font-weight: bold;
+            background: #0a3a66;
+            color: white;
+            padding: 6px 10px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subsection {
+            margin-bottom: 14px;
+            padding-left: 0;
+        }
+
+        .degree-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: #0a3a66;
+            margin-bottom: 2px;
+        }
+
+        .institution {
+            font-size: 11px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 2px;
+        }
+
+        .date {
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 3px;
+            font-style: italic;
+        }
+
+        .detail {
+            font-size: 11px;
+            color: #333;
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+
+        .gpa {
+            font-size: 11px;
+            color: #666;
+            margin-top: 3px;
+        }
+
+        .position {
+            font-size: 12px;
+            font-weight: bold;
+            color: #0a3a66;
+            margin-bottom: 2px;
+        }
+
+        .company {
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .responsibilities {
+            font-size: 11px;
+            margin-left: 15px;
+            margin-top: 4px;
+            color: #333;
+        }
+
+        .responsibilities li {
+            margin-bottom: 3px;
+        }
+
+        .skill-category {
+            font-size: 12px;
+            font-weight: bold;
+            color: #0a3a66;
+            margin-bottom: 4px;
+        }
+
+        .skill-list {
+            font-size: 11px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .publication {
+            font-size: 11px;
+            color: #333;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .journal {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .authors {
+            font-weight: bold;
+        }
+
+        .research-item {
+            font-size: 11px;
+            color: #333;
+            margin-bottom: 6px;
+            margin-left: 15px;
+            line-height: 1.4;
+        }
+
+        .research-item::before {
+            content: "• ";
+            margin-right: 5px;
+        }
+
+        .achievement {
+            font-size: 11px;
+            color: #333;
+            margin-bottom: 4px;
+            margin-left: 15px;
+        }
+
+        .achievement::before {
+            content: "✓ ";
+            margin-right: 5px;
+            color: #0a3a66;
+            font-weight: bold;
+        }
+
+        .language {
+            font-size: 11px;
+            margin-bottom: 3px;
+            color: #333;
+        }
+
+        .language-strong {
+            font-weight: bold;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e8f4f8;
+            color: #0a3a66;
+            padding: 2px 6px;
+            margin: 2px 2px 2px 0;
+            border-radius: 3px;
+            font-size: 10px;
+            border: 1px solid #0a3a66;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>MD. HABIBULLAH</h1>
+            <div class="subtitle">Integrated PhD Researcher · Chemical Engineering</div>
+            <div class="contact-info">
+                <div>Kyung Hee University, Suwon, South Korea</div>
+                <div>📧 habibullah@khu.ac.kr | habibullah371245@gmail.com</div>
+                <div>📱 +82-010-2130-7267 | WhatsApp: +880-1721-324880</div>
+                <div>🔗 <a href="https://scholar.google.com/citations?hl=en&user=eBw87vAAAAAJ">Google Scholar</a> | <a href="https://www.researchgate.net/profile/Habibullah-Habibullah-8">ResearchGate</a></div>
+            </div>
+        </header>
+
+        <!-- ACADEMIC PROFILE -->
+        <div class="section">
+            <div class="section-title">Academic Profile</div>
+            <div class="detail" style="line-height: 1.6;">
+                Integrated PhD Candidate in Chemical Engineering at Kyung Hee University (since March 2026) with specialization in <strong>polymer membrane design, separation processes, desalination, and wastewater treatment</strong>. B.Sc. in Textile Engineering (Wet Process) from Bangladesh University of Textiles (BUTEX). Published in Royal Society of Chemistry (RSC). Strong background in experimental research, analytical techniques, and sustainable engineering solutions.
+            </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            
+            <div class="subsection">
+                <div class="degree-title">Integrated PhD in Chemical Engineering</div>
+                <div class="institution">Kyung Hee University, Suwon, South Korea</div>
+                <div class="date">March 2026 – Present</div>
+                <div class="detail"><strong>Role:</strong> Graduate Research Assistant</div>
+                <div class="detail"><strong>Focus Areas:</strong> Polymer membranes, separation science, desalination, wastewater treatment, nanomaterials integration</div>
+            </div>
+
+            <div class="subsection">
+                <div class="degree-title">B.Sc. in Textile Engineering (Wet Process Engineering)</div>
+                <div class="institution">Bangladesh University of Textiles (BUTEX), Dhaka, Bangladesh</div>
+                <div class="date">Session 2016–2017</div>
+                <div class="gpa"><strong>CGPA:</strong> 3.09/4.00 (Last 4 semesters: 3.43/4.00)</div>
+                <div class="detail"><strong>Specialization:</strong> Dyeing, finishing, and chemical processing of textile substrates</div>
+            </div>
+        </div>
+
+        <!-- RESEARCH EXPERIENCE -->
+        <div class="section">
+            <div class="section-title">Research Experience</div>
+            
+            <div class="subsection">
+                <div class="position">Graduate Research Assistant</div>
+                <div class="company">Kyung Hee University, Suwon, South Korea | March 2026 – Present</div>
+                <ul class="responsibilities">
+                    <li><strong>Membrane Fabrication:</strong> Design and synthesis of biodegradable polymeric membranes using NIPS and phase-inversion techniques</li>
+                    <li><strong>Characterization:</strong> FT-IR Spectroscopy, SEM imaging, Water Contact Angle (WCA) analysis, membrane flux and rejection testing</li>
+                    <li><strong>Application Focus:</strong> Desalination, ultrafiltration, wastewater treatment, and biomedical applications (artificial organs)</li>
+                    <li><strong>Experimental Methods:</strong> Cross-flow filtration, dead-end filtration cells, polymer solution casting, pore size analysis</li>
+                    <li><strong>Research Goals:</strong> Develop high-performance, sustainable membranes with enhanced permeability and selectivity</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="subsection">
+                <div class="position">Process Engineer</div>
+                <div class="company">Graphics Textiles Ltd., Dhaka, Bangladesh | ~1 Year</div>
+                <ul class="responsibilities">
+                    <li>Managed reactive dyeing processes ensuring color consistency and quality standards</li>
+                    <li>Optimized finishing operations and process parameters for efficiency</li>
+                    <li>Conducted QC checks and effluent management procedures</li>
+                    <li>Troubleshot production issues and implemented corrective actions</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <div class="position">Garment Merchandiser</div>
+                <div class="company">Matrix Sweaters Ltd., Dhaka, Bangladesh | ~7 Months</div>
+                <ul class="responsibilities">
+                    <li>Coordinated buyer communication and sample approvals</li>
+                    <li>Managed production timelines and order tracking</li>
+                    <li>Processed export documentation and ensured compliance</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RESEARCH INTERESTS -->
+        <div class="section">
+            <div class="section-title">Research Interests & Specializations</div>
+            <div class="research-item"><strong>Membrane Technology:</strong> High-performance polymer membranes, NIPS, phase-inversion methods, selective transport</div>
+            <div class="research-item"><strong>Separation Processes:</strong> Ultrafiltration, nanofiltration, reverse osmosis, anti-fouling strategies</div>
+            <div class="research-item"><strong>Biodegradable Polymers:</strong> Eco-friendly polymer systems, sustainable materials, biocompatibility</div>
+            <div class="research-item"><strong>Environmental Applications:</strong> Industrial wastewater treatment, textile effluent management, water purification</div>
+            <div class="research-item"><strong>Nanomaterials Integration:</strong> Functional fillers, nanoparticles in membranes, performance enhancement</div>
+            <div class="research-item"><strong>Biomedical Applications:</strong> Haemodialysis membranes, artificial organs, biocompatible systems</div>
+        </div>
+
+        <!-- PUBLICATIONS & RESEARCH OUTPUT -->
+        <div class="section">
+            <div class="section-title">Publications & Research Output</div>
+            
+            <div class="publication">
+                <span class="authors">Habibullah</span> et al. <span class="journal">"Water and Electricity Consumption Patterns with Effluent Quality in the Textile Processing Industry of Bangladesh"</span> <br>
+                <strong>Royal Society of Chemistry (RSC)</strong> — Peer-reviewed publication | 2024<br>
+                <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eBw87vAAAAAJ&citation_for_view=eBw87vAAAAAJ:8k81kl-MbHgC" style="color: #0066cc;">View on Google Scholar</a>
+            </div>
+
+            <div class="detail" style="margin-top: 8px;">
+                <strong>Google Scholar Profile:</strong> <a href="https://scholar.google.com/citations?hl=en&user=eBw87vAAAAAJ" style="color: #0066cc;">https://scholar.google.com/citations?hl=en&user=eBw87vAAAAAJ</a>
+            </div>
+        </div>
+
+        <!-- LABORATORY & TECHNICAL SKILLS -->
+        <div class="section">
+            <div class="section-title">Laboratory & Technical Skills</div>
+            
+            <div style="margin-bottom: 10px;">
+                <div class="skill-category">Characterization & Instrumentation</div>
+                <div class="skill-list">
+                    <span class="badge">FT-IR Spectroscopy</span>
+                    <span class="badge">SEM (Scanning Electron Microscopy)</span>
+                    <span class="badge">Water Contact Angle (WCA)</span>
+                    <span class="badge">Chromatography</span>
+                    <span class="badge">Pore Size Analysis</span>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <div class="skill-category">Membrane Fabrication & Testing</div>
+                <div class="skill-list">
+                    <span class="badge">NIPS (Non-Solvent Induced Phase Separation)</span>
+                    <span class="badge">Phase-Inversion Methods</span>
+                    <span class="badge">Polymer Solution Casting</span>
+                    <span class="badge">Dead-End Filtration</span>
+                    <span class="badge">Cross-Flow Filtration</span>
+                    <span class="badge">Flux & Rejection Testing</span>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <div class="skill-category">Wet Process Engineering</div>
+                <div class="skill-list">
+                    <span class="badge">Reactive Dyeing</span>
+                    <span class="badge">Textile Finishing</span>
+                    <span class="badge">Color Matching</span>
+                    <span class="badge">Effluent Analysis</span>
+                    <span class="badge">Quality Control</span>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <div class="skill-category">Research & Academic</div>
+                <div class="skill-list">
+                    <span class="badge">Scientific Writing</span>
+                    <span class="badge">Journal Publishing</span>
+                    <span class="badge">Literature Review</span>
+                    <span class="badge">Data Analysis</span>
+                    <span class="badge">Research Methodology</span>
+                </div>
+            </div>
+
+            <div>
+                <div class="skill-category">Industry & Management</div>
+                <div class="skill-list">
+                    <span class="badge">Production Management</span>
+                    <span class="badge">Process Optimization</span>
+                    <span class="badge">Buyer Communication</span>
+                    <span class="badge">Quality Assurance</span>
+                    <span class="badge">Export Documentation</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- LANGUAGE PROFICIENCY -->
+        <div class="section">
+            <div class="section-title">Language Proficiency</div>
+            
+            <div class="language"><span class="language-strong">Bengali:</span> Native / Fluent</div>
+            <div class="language"><span class="language-strong">English:</span> IELTS 6.5 (Academic)
+                <div style="margin-left: 15px; font-size: 10px; color: #666; margin-top: 2px;">
+                    Reading: 7.0 | Listening: 7.0 | Speaking: 6.5 | Writing: 6.0
+                </div>
+            </div>
+            <div class="language"><span class="language-strong">Korean:</span> Learning (Beginner)</div>
+        </div>
+
+        <!-- KEY ACHIEVEMENTS -->
+        <div class="section">
+            <div class="section-title">Key Achievements</div>
+            
+            <div class="achievement">Published in Royal Society of Chemistry (RSC) — International peer-reviewed journal</div>
+            <div class="achievement">Integrated PhD Scholar at Kyung Hee University — Top-tier research institution</div>
+            <div class="achievement">Strong academic performance with 3.43/4.00 GPA in final 4 semesters (BUTEX)</div>
+            <div class="achievement">2+ years of industry experience in textile processing and manufacturing</div>
+            <div class="achievement">Expertise in membrane characterization and advanced analytical techniques</div>
+        </div>
+
+        <!-- RESEARCH COLLABORATIONS & INTERESTS -->
+        <div class="section">
+            <div class="section-title">Open For Collaborations</div>
+            
+            <div class="detail" style="line-height: 1.6;">
+                Actively seeking research collaborations in:
+                <ul style="margin-left: 15px; margin-top: 5px;">
+                    <li style="font-size: 11px; margin-bottom: 3px;">Membrane science and engineering</li>
+                    <li style="font-size: 11px; margin-bottom: 3px;">Water treatment and desalination</li>
+                    <li style="font-size: 11px; margin-bottom: 3px;">Sustainable polymer materials</li>
+                    <li style="font-size: 11px; margin-bottom: 3px;">Separation processes and technologies</li>
+                    <li style="font-size: 11px; margin-bottom: 3px;">Biomedical and environmental applications</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="section">
+            <div class="section-title">Contact & Connect</div>
+            
+            <div class="detail">
+                <strong>📧 Email:</strong> habibullah@khu.ac.kr | habibullah371245@gmail.com<br>
+                <strong>📱 Phone:</strong> +82-010-2130-7267 (South Korea) | +880-1721-324880 (WhatsApp)<br>
+                <strong>🔗 Online Profiles:</strong><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Google Scholar: <a href="https://scholar.google.com/citations?hl=en&user=eBw87vAAAAAJ" style="color: #0066cc;">Scholar Profile</a><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;ResearchGate: <a href="https://www.researchgate.net/profile/Habibullah-Habibullah-8" style="color: #0066cc;">Research Profile</a><br>
+                <strong>🌐 Portfolio Website:</strong> <a href="https://habibullah-phd.github.io/Portfolio/" style="color: #0066cc;">Academic Portfolio</a>
+            </div>
+        </div>
+
+        <footer style="text-align: center; border-top: 1px solid #ddd; margin-top: 20px; padding-top: 15px; font-size: 10px; color: #666;">
+            <div>Md. Habibullah | Integrated PhD Researcher | Kyung Hee University</div>
+            <div>© 2026 — Last Updated: May 2026</div>
+        </footer>
+    </div>
+</body>
+</html>
